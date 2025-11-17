@@ -60,7 +60,7 @@ function App() {
               <BookOpen className="w-10 h-10" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-center">
-              My Awesome School Projects! 🎓
+              Year 7 Homework Project: Exploration 🎓
             </h1>
           </div>
           <p className="text-white/95 text-base md:text-lg text-center font-semibold">
