@@ -197,12 +197,6 @@ export default function Science() {
               Your browser does not support the video tag.
             </video>
           </div>
-          
-          <div className="mt-4 bg-purple-50 border-l-4 border-purple-500 p-4 rounded-r-lg">
-            <p className="text-sm text-gray-600">
-              <strong className="text-purple-800">💡 Tip:</strong> To add your demo video, save it as <code className="bg-purple-100 px-2 py-1 rounded">angle-ace-demo.mp4</code> in the <code className="bg-purple-100 px-2 py-1 rounded">public</code> folder.
-            </p>
-          </div>
         </div>
 
         {/* Conclusion Section */}
