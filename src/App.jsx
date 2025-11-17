@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { BookOpen, Globe, Calculator, Beaker, History, Palette, Book, Laptop, Languages } from 'lucide-react';
+import { BookOpen, Globe, Calculator, Beaker, Book, Laptop, Languages, Flag } from 'lucide-react';
 import Geography from './components/Geography';
 import Mathematics from './components/Mathematics';
 import Science from './components/Science';
 import English from './components/English';
 import Computing from './components/Computing';
 import MFL from './components/MFL';
-import ComingSoon from './components/ComingSoon';
+import UAE from './components/UAE';
 
 function App() {
   const [activeTab, setActiveTab] = useState('geography');
@@ -18,8 +18,7 @@ function App() {
     { id: 'english', name: 'English', icon: Book, color: 'from-purple-500 to-indigo-600' },
     { id: 'computing', name: 'Computing', icon: Laptop, color: 'from-cyan-500 to-blue-600' },
     { id: 'mfl', name: 'MFL', icon: Languages, color: 'from-orange-400 to-amber-500' },
-    { id: 'history', name: 'History', icon: History, color: 'from-amber-500 to-yellow-600' },
-    { id: 'art', name: 'Art', icon: Palette, color: 'from-pink-500 to-rose-600' },
+    { id: 'uae', name: 'UAE', icon: Flag, color: 'from-red-500 to-green-600' },
   ];
 
   const renderContent = () => {
@@ -36,10 +35,8 @@ function App() {
         return <Computing />;
       case 'mfl':
         return <MFL />;
-      case 'history':
-        return <ComingSoon subject="History" icon="📚" />;
-      case 'art':
-        return <ComingSoon subject="Art" icon="🎨" />;
+      case 'uae':
+        return <UAE />;
       default:
         return <Geography />;
     }
