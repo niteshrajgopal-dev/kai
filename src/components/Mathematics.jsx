@@ -194,14 +194,14 @@ export default function Mathematics() {
                   <tbody>
                     {zones.map((zone, index) => (
                       <tr key={index} className={`${zone.bgColor} hover:opacity-80 transition-opacity`}>
-                        <td className="border border-gray-300 p-4 font-semibold">
+                        <td className="border border-gray-300 p-4 font-semibold text-gray-800">
                           <span className="mr-2">{zone.icon}</span>
                           {zone.name}
                         </td>
-                        <td className="border border-gray-300 p-4 text-center font-bold text-lg">
+                        <td className="border border-gray-300 p-4 text-center font-bold text-lg text-gray-800">
                           {zone.percentage}%
                         </td>
-                        <td className="border border-gray-300 p-4 text-center font-mono">
+                        <td className="border border-gray-300 p-4 text-center font-mono text-gray-800">
                           30m² × {(zone.percentage / 100).toFixed(2)}
                         </td>
                         <td className="border border-gray-300 p-4 text-center">
@@ -210,9 +210,9 @@ export default function Mathematics() {
                       </tr>
                     ))}
                     <tr className="bg-gradient-to-r from-green-100 to-emerald-100 font-bold">
-                      <td className="border border-gray-300 p-4">Total</td>
-                      <td className="border border-gray-300 p-4 text-center text-lg">100%</td>
-                      <td className="border border-gray-300 p-4 text-center font-mono">30m² × 1</td>
+                      <td className="border border-gray-300 p-4 text-gray-800">Total</td>
+                      <td className="border border-gray-300 p-4 text-center text-lg text-gray-800">100%</td>
+                      <td className="border border-gray-300 p-4 text-center font-mono text-gray-800">30m² × 1</td>
                       <td className="border border-gray-300 p-4 text-center">
                         <span className="text-xl font-bold text-green-800">30m²</span>
                       </td>
